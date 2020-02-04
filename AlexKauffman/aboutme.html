@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0">
+    <!--Prevent apple default full screen mode-->
+    <meta name="apple-mobile-web-app-title" content="Alex Kauffman">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Alex Kauffman : About me</title>
+    <meta name="description" content="Alex Kauffman Portfolio 2019.">
+    <meta name="author" content="Alex Kauffman">
+    <meta name="keywords" content="Alex Kauffman Design, AK Design, Alex Kauffman">
+    <link rel="shortcut icon" type="image/png" href="imgs/aicon.png">
+    <link rel="icon" href="imgs/aicon.png">
+    <link rel="mask-icon" href="imgs/aicon.png" color="#FED330">
+    <!--Apple Icons-->
+    <link rel="apple-touch-icon" href="imgs/iPhone Retina.png">
+    <!--OG-->
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="Alex Kauffman Portfolio" />
+    <meta property="og:description"
+        content="I'm an aspiring New Media Designer that loves to create ux/ui, interaction and motion things into the community." />
+    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+    <meta property="og:url" content="alex-kauffman.com" />
+    <meta property="og:site_name" content="Alex Kauffman Portfolio" />
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="cssreset.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Roboto:300,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Sorce Files-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="libs/main.js"></script>
+    <script src="libs/pace.js" type="text/javascript"></script>
+    <!--Google API Web tracks-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133321258-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133321258-1');
+    </script>
+</head>
+
+<body class="lightsytle">
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 16) + "px; left: " + (e.pageX - 16) + "px;");
+        });
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500);
+        });
+    </script>
+    <div onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="imgs/uparrow.svg" width="100%">
+    </div>
+    <div class="pageparts">
+        <a href="https://dribbble.com/AKdesign13" target="_blank"><img src="imgs/dribble.svg" width="100%"></a>
+        <a href="https://www.instagram.com/xander_1995/" target="_blank"><img src="imgs/igicon.svg" width="100%"
+                style="padding-top: 10px;"></a>
+        <a href="https://www.linkedin.com/in/alex-kauffman/" target="_blank"><img src="imgs/inicon.svg" width="100%"
+                style="padding-top: 10px;"></a>
+    </div>
+    <!--Global Menu-->
+    <nav class="nav-down">
+        <div class="menu--body">
+            <a href="index.html" class="logo">
+                <img src="imgs/A Logo.svg" height="32" alt="AK Logo">
+            </a>
+            <input id="menu" class="menu--toggle" type="checkbox">
+            <label for="menu" class="menu--toggle--text">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <ul class="menu--list">
+                <li class="cool-link">
+                    <a href="index.html">Projects</a>
+                </li>
+                <li class="cool-link">
+                    <a style="color: #1B9CFC; font-weight: bold; letter-spacing: 1px;" href="aboutme.html">About Me</a>
+                </li>
+                <li class="cool-link">
+                    <a href="bside.html">Back Side</a>
+                </li>
+                <li class="cool-link">
+                    <a href="AlexKauffmanResume.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Web Hero-->
+    <header class="fadein">
+        <div class="aboutmehero">
+            <h1>About Me</h1>
+            <div class="half1">
+                <div class="imgplaceholder">
+                    <img src="imgs/alexphoto.png" width="100%" alt="picture of person sitting on stool">
+                </div>
+            </div>
+            <div class="half2">
+                <h1 class="intro">Hello, I'm Alex Kauffman.</h1>
+                <div class="aboutfacts">
+                    <p>Hard worker 💪</p>
+                    <p>New Media Design 📱</p>
+                    <p>Foilist 🤺</p>
+                    <p>Like to think outside the box 🧠</p>
+                    <p>Dog person 🐕</p>
+                    <p>Sociable 🤝</p>
+                    <p>Not afraid to try something new 🔍</p>
+                </div>
+                <p>I like to create visual things such as ui and motion design to create an exciting experience for people to enjoy. I study New Media Design at RIT till 2021. Being a New Media Designer gives me a wide spread of medium to help bring my visual sense into a fun experience.</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <main class="lilresume">
+            <div class="half1">
+                <h1>Experience</h1>
+                <section class="contents">
+                    <h2>Visual Design Intern</h2>
+                    <h3>Quick Base <span style="font-style: normal">|</span> Boston MA</h3>
+                    <p>Team collaboration working on new
+                        design language for a software product. I
+                        helped create new icons, UI elements and
+                        improve on visual layouts for new upcoming
+                        products.</p>
+                </section>
+                <section class="contents">
+                    <h2>Product Support Intern</h2>
+                    <h3>Williams International <span style="font-style: normal">|</span> Pontiac Mi</h3>
+                    <p>I helped work on designing digital signage,
+                        process indicator development, debug codes,
+                        front end application enhancement, and form
+                        template improvements.</p>
+                </section>
+            </div>
+            <div class="hafl2">
+                <h1>Education</h1>
+                <section class="contents">
+                    <h2>BFA New Media Design ‘21</h2>
+                    <h3>Rochester Institute of Technology <span style="font-style: normal">|</span> Rochester NY</h3>
+                </section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Awards</h1>
+                <section class="contents">
+                    <h2>Deans List</h2>
+                    <h3>2016 - present</h3>
+                    <br>
+                    <h2>Silver Key Scholastic Arts Award: Digital Art</h2>
+                    <h3>2013</h3>
+                </section>
+            </div>
+        </main>
+    </header>
+    <div class="thecommunity">
+        <h1>The community</h1>
+        <div class="taw">
+            <div class="half1">
+                <img src="imgs/tawalex.JPG" width="500px" alt="picture of me learning about marker rendering.">
+                <h2>Thought at work</h2>
+                <p>Help the team improve design and branding to create fun ongoing team collaboration with the design
+                    community.</p>
+            </div>
+            <div class="half2">
+                <img src="imgs/fencingalex.jpeg" width="500px" alt="picture of me learning about marker rendering.">
+                <h2>RIT Fencing Club</h2>
+                <p>I started fencing in the fall of 2019 and fell in love with it. Taking good breaks from academics is
+                    a great way to get me into the community. Team player and sometimes an unpaid referee to help each
+                    other out.</p>
+            </div>
+        </div>
+    </div>
+    <div class="aboutbreif">
+        <h1>Looking for someone who works hard and also loves working with the community?</h1>
+        <div class="button"><a href="mailto:ak4479@rit.edu">Let's Chat!</a></div>
+    </div>
+    <!--Website Footer-->
+    <footer>
+        <h4>Alex Kauffman &copy; 2020</h4>
+    </footer>
+</body>
+<script src="libs/main.js"></script>
+
+</html>
